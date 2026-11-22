@@ -79,6 +79,7 @@ public class ModItems {
     public static final RegistryObject<Item> MARTINI_GLASS_OF_AXOLOTL_SPECIAL_DRINK = ITEMS.register("martini_glass_of_axolotl_special_drink", () -> new PasterDreamDrinkItem(new PasterDreamDrinkAndFoodProperties().sanAdd(1).food(new FoodProperties.Builder()
             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 2400, 0), 1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.CONDUIT_POWER, 2400, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(ModEffects.AXOLOTL_GRACE.get(), 2400, 0), 1.0f)
             .effect(() -> new MobEffectInstance(com.pasterdream.pasterdreammod.init.ModEffects.COOK.get(), 1200, 0), 1.0f)
             .nutrition(3).saturationMod(0.5f).alwaysEat().build())){
         @Override
