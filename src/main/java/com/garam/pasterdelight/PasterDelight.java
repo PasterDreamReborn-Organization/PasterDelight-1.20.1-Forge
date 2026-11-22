@@ -1,5 +1,6 @@
 package com.garam.pasterdelight;
 
+import com.garam.pasterdelight.event.AxolotlGraceHandler;
 import com.garam.pasterdelight.event.MoltenGoldSkilletFireHandler;
 import com.garam.pasterdelight.event.TagsFoodHandler;
 import com.garam.pasterdelight.init.*;
@@ -43,6 +44,7 @@ public class PasterDelight
         ModMenus.register(modEventBus);
         ModRecipes.register(modEventBus);
         ModLootModifiers.register(modEventBus);
+        ModEffects.register(modEventBus);
         ModNetWork.register();
 
         modEventBus.addListener(this::commonSetup);
@@ -53,6 +55,7 @@ public class PasterDelight
         MinecraftForge.EVENT_BUS.addListener(PasterDelight::onItemAttributeModifier);
         MinecraftForge.EVENT_BUS.register(TagsFoodHandler.class);
         MinecraftForge.EVENT_BUS.register(MoltenGoldSkilletFireHandler.class);
+        MinecraftForge.EVENT_BUS.register(AxolotlGraceHandler.class);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

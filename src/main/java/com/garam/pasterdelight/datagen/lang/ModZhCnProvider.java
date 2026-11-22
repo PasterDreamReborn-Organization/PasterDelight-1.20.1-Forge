@@ -59,6 +59,8 @@ public class ModZhCnProvider extends LanguageProvider {
         add(ModItems.MARTINI_GLASS_OF_AXOLOTL_SPECIAL_DRINK.get(),"美西螈特饮");
         add("fluid.pasterdelight.axolotl_special_drink","美西螈特饮（流体）");
         add("tooltip.pasterdelight.martini_glass_of_axolotl_special_drink","§7§o--不用担心，美西螈只是到杯子里洗了个蔚蓝露滴澡");
+        add("effect.pasterdelight.axolotl_grace", "美西螈的恩惠");
+        add("effect.pasterdelight.axolotl_grace.description", "拥有该效果时，在雨天或雷雨天提高移动速度，并提升在水中的游泳速度。");
         add(ModItems.SHROOMCLAW_ENERGY.get(),"蘑爪");
         add("fluid.pasterdelight.shroomclaw_energy","蘑爪（流体）");
         add("tooltip.pasterdelight.shroomclaw_energy","§7§o--释放暗影怪");
