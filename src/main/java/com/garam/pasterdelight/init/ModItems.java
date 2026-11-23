@@ -149,13 +149,20 @@ public class ModItems {
     // ====== 工具类方块（橱柜一类的放在这里）======
 
     // 锅
-    public static final RegistryObject<Item> MOLTEN_GOLD_COOKING_POT = ITEMS.register("molten_gold_cooking_pot", () -> new CookingPotItem(ModBlocks.MOLTEN_GOLD_COOKING_POT.get(), new Item.Properties().stacksTo(1)){
+    public static final RegistryObject<Item> MOLTEN_GOLD_COOKING_POT = ITEMS.register("molten_gold_cooking_pot", () -> new CookingPotItem(ModBlocks.MOLTEN_GOLD_COOKING_POT.get(), new Item.Properties().stacksTo(1))
+    {
         @Override
         public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flag) {
             super.appendHoverText(stack, level, tooltip, flag);
             tooltip.add(Component.translatable("tooltip.pasterdelight.molten_gold_cooking_pot.1"));
             tooltip.add(Component.translatable("tooltip.pasterdelight.molten_gold_cooking_pot.2"));
             tooltip.add(Component.translatable("tooltip.pasterdelight.molten_gold_cooking_pot.3"));
+        }
+
+        @Override
+        public boolean isFireResistant()
+        {
+            return true;
         }
     });
     // 炙焰金平底锅
@@ -169,6 +176,12 @@ public class ModItems {
             tooltip.add(Component.translatable("tooltip.pasterdelight.molten_gold_skillet.3"));
             tooltip.add(Component.translatable("tooltip.pasterdelight.molten_gold_skillet.4"));
             tooltip.add(Component.translatable("tooltip.pasterdelight.molten_gold_skillet.5"));
+        }
+
+        @Override
+        public boolean isFireResistant()
+        {
+            return true;
         }
     });
     // 染梦合金平底锅（？）
