@@ -184,7 +184,16 @@ public class ModItems {
             return true;
         }
     });
-    // 染梦合金平底锅（？）
+    // 染梦合金平底锅
+    public static final RegistryObject<Item> DYEDREAM_ALLOY_SKILLET = ITEMS.register("dyedream_alloy_skillet", () -> new SkilletItem(ModBlocks.DYEDREAM_ALLOY_SKILLET.get(), new Item.Properties().stacksTo(1))
+    {
+        @Override
+        public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flag)
+        {
+            super.appendHoverText(stack, level, tooltip, flag);
+            //在这里添加Tooltip
+        }
+    });
 
     // 橱柜
 

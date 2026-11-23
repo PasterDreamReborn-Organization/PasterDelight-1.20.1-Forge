@@ -86,6 +86,8 @@ public class ModEnUsProvider extends LanguageProvider {
         add("tooltip.pasterdelight.molten_gold_skillet.4", "§7▪ §9Applies a burning effect when hitting an entity, dealing 20% extra damage while the entity is on fire");
         add("tooltip.pasterdelight.molten_gold_skillet.5", "§7§o--A \"Kun Jin Kao\" in my left hand, a \"0xCC 0xCC 0xCC\" in my right");
 
+        add(ModBlocks.DYEDREAM_ALLOY_SKILLET.get(), "Dyedream Alloy Skillet");
+
         add("itemGroup.pasterdelight.creative_mode_tab","PasterDelight");
 
     }

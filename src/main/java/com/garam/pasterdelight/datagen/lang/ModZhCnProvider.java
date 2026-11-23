@@ -86,6 +86,9 @@ public class ModZhCnProvider extends LanguageProvider {
         add("tooltip.pasterdelight.molten_gold_skillet.3", "§7▪ §9下方有容器时，自动将煎锅输出物放入其中");
         add("tooltip.pasterdelight.molten_gold_skillet.4", "§7▪ §9击中实体时施加燃烧效果，当实体在燃烧时，造成20%额外伤害");
         add("tooltip.pasterdelight.molten_gold_skillet.5", "§7§o--左手一个锟斤拷，右手直呼烫烫烫");
+
+        add(ModBlocks.DYEDREAM_ALLOY_SKILLET.get(), "染梦合金煎锅");
+
         //创造模式物品栏
         add("itemGroup.pasterdelight.creative_mode_tab","帕斯特乐事");
     }

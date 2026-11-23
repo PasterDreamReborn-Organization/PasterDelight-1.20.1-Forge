@@ -24,6 +24,7 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider
 
         dropSelf(ModBlocks.MOLTEN_GOLD_COOKING_POT.get());
         dropSelf(ModBlocks.MOLTEN_GOLD_SKILLET.get());
+        dropSelf(ModBlocks.DYEDREAM_ALLOY_SKILLET.get());
     }
 
     @Override
