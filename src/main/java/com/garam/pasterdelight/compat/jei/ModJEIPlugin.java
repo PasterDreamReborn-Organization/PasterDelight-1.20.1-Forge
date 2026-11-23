@@ -17,6 +17,7 @@ public class ModJEIPlugin implements IModPlugin
     {
         registration.addRecipeCatalyst(new ItemStack(ModItems.MOLTEN_GOLD_COOKING_POT.get()), FDRecipeTypes.COOKING);
         registration.addRecipeCatalyst(new ItemStack(ModItems.MOLTEN_GOLD_SKILLET.get()), RecipeTypes.CAMPFIRE_COOKING);
+        registration.addRecipeCatalyst(new ItemStack(ModItems.DYEDREAM_ALLOY_SKILLET.get()), RecipeTypes.CAMPFIRE_COOKING);
     }
 
     @Override

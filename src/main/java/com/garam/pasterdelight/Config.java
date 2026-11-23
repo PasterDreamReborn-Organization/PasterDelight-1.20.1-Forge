@@ -42,6 +42,15 @@ public class Config
             .comment("带有pasterdelight:give_cook_buff标签食物每多少饱和度增加料理buff效果等级，默认为15")
             .defineInRange("cook_saturation_per_level", 15, 1, Integer.MAX_VALUE);
 
+    private static final ForgeConfigSpec.DoubleValue DYEDREAM_ALLOY_SKILLET_GET_PLAYER_SAN_AURA_DISTANCE_LIMIT = BUILDER
+            .comment("染梦合金煎锅给予玩家SAN值提升的距离限制")
+            .defineInRange("dyedream_alloy_skillet_get_player_san_aura_distance_limit", 5d, 0x0.0000000000001P-1022, 0x1.fffffffffffffP+1023);
+
+    private static final ForgeConfigSpec.DoubleValue DYEDREAM_ALLOY_SKILLET_GET_PLAYER_SAN_AURA_SPEED = BUILDER
+            .comment("染梦合金煎锅给予玩家SAN值提升的速率（单位：/tick）")
+            .defineInRange("dyedream_alloy_skillet_get_player_san_aura_speed", 0.01d, 0x0.0000000000001P-1022, 0x1.fffffffffffffP+1023);
+
+
     static final ForgeConfigSpec SPEC = BUILDER.build();
     public static double SanPerSaturation;
     public static double MinEffectiveSaturationForSan;
@@ -50,6 +59,8 @@ public class Config
     public static int CookSaturationPerStep;
     public static int CookSecondsPerStep;
     public static int CookSaturationPerLevel;
+    public static double DyedreamAlloySkilletGetPlayerSanAuraDistanceLimit;
+    public static double DyedreamAlloySkilletGetPlayerSanAuraSpeed;
 
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event) {
@@ -61,6 +72,7 @@ public class Config
         CookSaturationPerStep = COOK_SATURATION_PER_STEP.get();
         CookSecondsPerStep = COOK_SECONDS_PER_STEP.get();
         CookSaturationPerLevel = COOK_SATURATION_PER_LEVEL.get();
-
+        DyedreamAlloySkilletGetPlayerSanAuraDistanceLimit = DYEDREAM_ALLOY_SKILLET_GET_PLAYER_SAN_AURA_DISTANCE_LIMIT.get();
+        DyedreamAlloySkilletGetPlayerSanAuraSpeed = DYEDREAM_ALLOY_SKILLET_GET_PLAYER_SAN_AURA_SPEED.get();
     }
 }

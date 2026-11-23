@@ -264,7 +264,13 @@ public class PasterDelightSkilletBlockEntity extends SkilletBlockEntity
                     }
                 }
             }
+            tickSpacial();
         }
+    }
+
+    public void tickSpacial()
+    {
+        //每tick的特殊行为，子类可以@Override此方法
     }
 
     @Override

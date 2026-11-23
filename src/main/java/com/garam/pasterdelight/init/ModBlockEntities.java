@@ -2,6 +2,7 @@ package com.garam.pasterdelight.init;
 
 import com.garam.pasterdelight.PasterDelight;
 import com.garam.pasterdelight.world.block.pasterdelightcookingpot.moltengoldcookingpot.MoltenGoldCookingPotBlockEntity;
+import com.garam.pasterdelight.world.block.pasterdelightskillet.dyedreamalloyskillet.DyedreamAlloySkilletBlockEntity;
 import com.garam.pasterdelight.world.block.pasterdelightskillet.moltengoldskillet.MoltenGoldSkilletBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -15,6 +16,7 @@ public class ModBlockEntities
 
     public static final RegistryObject<BlockEntityType<MoltenGoldCookingPotBlockEntity>> MOLTEN_GOLD_COOKING_POT = BLOCK_ENTITIES.register("molten_gold_cooking_pot", () -> BlockEntityType.Builder.of(MoltenGoldCookingPotBlockEntity::new, ModBlocks.MOLTEN_GOLD_COOKING_POT.get()).build(null));
     public static final RegistryObject<BlockEntityType<MoltenGoldSkilletBlockEntity>> MOLTEN_GOLD_SKILLET = BLOCK_ENTITIES.register("molten_gold_skillet", () -> BlockEntityType.Builder.of(MoltenGoldSkilletBlockEntity::new, ModBlocks.MOLTEN_GOLD_SKILLET.get()).build(null));
+    public static final RegistryObject<BlockEntityType<DyedreamAlloySkilletBlockEntity>> DYEDREAM_ALLOY_SKILLET = BLOCK_ENTITIES.register("dyedream_alloy_skillet", () -> BlockEntityType.Builder.of(DyedreamAlloySkilletBlockEntity::new, ModBlocks.DYEDREAM_ALLOY_SKILLET.get()).build(null));
 
     public static void register(IEventBus eventBus)
     {

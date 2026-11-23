@@ -11,6 +11,7 @@ public class ModItemRenderer
         event.enqueueWork(() ->
         {
             ItemProperties.register(ModItems.MOLTEN_GOLD_SKILLET.get(), ResourceLocation.parse("cooking"), (stack, level, entity, seed) -> stack.getTagElement("Cooking") != null ? 1.0F : 0.0F);
+            ItemProperties.register(ModItems.DYEDREAM_ALLOY_SKILLET.get(), ResourceLocation.parse("cooking"), (stack, level, entity, seed) -> stack.getTagElement("Cooking") != null ? 1.0F : 0.0F);
         });
     }
 }

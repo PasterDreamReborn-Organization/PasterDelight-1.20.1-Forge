@@ -11,6 +11,7 @@ public class ModBlockEntityRenderer
         event.enqueueWork(() ->
         {
             BlockEntityRenderers.register(ModBlockEntities.MOLTEN_GOLD_SKILLET.get(), PasterDelightSkilletBlockEntityRenderer::new);
+            BlockEntityRenderers.register(ModBlockEntities.DYEDREAM_ALLOY_SKILLET.get(), PasterDelightSkilletBlockEntityRenderer::new);
         });
     }
 }
