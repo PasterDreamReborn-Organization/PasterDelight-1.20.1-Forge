@@ -7,7 +7,7 @@ import net.minecraftforge.common.ForgeMod;
 
 public class AxolotlGraceEffect extends MobEffect {
     private static final String SWIM_SPEED_MODIFIER_UUID = "2368a80d-4aa7-4244-9927-8a744040369d";
-    private static final double SWIM_SPEED_BONUS = 4.0;
+    private static final double SWIM_SPEED_BONUS = 1.0;
 
     public AxolotlGraceEffect() {
         super(MobEffectCategory.BENEFICIAL, 0xF48FB1);

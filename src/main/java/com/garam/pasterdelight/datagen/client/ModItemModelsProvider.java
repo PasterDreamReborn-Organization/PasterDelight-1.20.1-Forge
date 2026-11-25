@@ -39,6 +39,9 @@ public class ModItemModelsProvider extends ItemModelProvider {
         basicItem(ModItems.FIG_PIE.get());
         basicItem(ModItems.FIG_PIE_SLICE.get());
         basicItem(ModItems.LIGHT_BALL_FLUORESCENT_SAUCE.get());
+        basicItem(ModItems.PINEAPPLE.get());
+        basicItem(ModItems.PINEAPPLE_WITH_WOLF_TAIL.get());
+        basicItem(ModItems.PINEAPPLE_SUCKER.get());
     }
 
     @Override

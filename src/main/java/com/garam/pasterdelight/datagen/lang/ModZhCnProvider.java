@@ -69,6 +69,20 @@ public class ModZhCnProvider extends LanguageProvider {
         add(ModItems.FIG_PIE_SLICE.get(),"无花果派切片");
         add(ModItems.FIG_PIE.get(),"无花果派");
         add("tooltip.pasterdelight.fig_pie","§7§o--有一丝丝粘嘴，但不失无花果的酸甜");
+        add(ModItems.PINEAPPLE.get(),"凤梨");
+        add(ModItems.PINEAPPLE_SUCKER.get(),"凤梨吸芽");
+        add(ModItems.PINEAPPLE_WITH_WOLF_TAIL.get(),"狼尾凤梨");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail","§7§o--凤梨驱复读机，输入凤梨可走哪读哪");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_1","§e此狼初雪 · 冰，是一直喊咩咩的白狼。");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_2","§e此狼相识友人，亦皆会称其为咩咩狼。");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_3","§e1.7.10 钉子户，热衷农业相关之模组。");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_4","§e其嗜好有羊肉，咖啡与第三狼称记事。");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_5","§e尤其热衷凤梨，亦会称凤梨为金狼果。");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_6","§e此狼目不识丁，称世间万物皆为画作。");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_7","§e记事微存强迫，自是有意使句段整齐。");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_8","§e凤梨驱复读机，输入凤梨可走哪读哪。");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_9","§e忌勿伸手触摸，望汝能珍爱生命可贵。");
+
 
         add(ModItems.LIGHT_BALL_FLUORESCENT_SAUCE.get(),"流明荧光酱");
 
