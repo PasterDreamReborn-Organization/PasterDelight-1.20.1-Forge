@@ -71,6 +71,19 @@ public class ModEnUsProvider extends LanguageProvider {
         add(ModItems.FIG_PIE_SLICE.get(),"Fig Pie Slice");
         add(ModItems.FIG_PIE.get(),"Fig Pie");
         add("tooltip.pasterdelight.fig_pie","§7§o--It's a bit sticky, but still has the sweet and tangy taste of figs");
+        add(ModItems.PINEAPPLE.get(),"Pineapple");
+        add(ModItems.PINEAPPLE_SUCKER.get(),"Pineapple Sucker");
+        add(ModItems.PINEAPPLE_WITH_WOLF_TAIL.get(),"Pineapple With Wolf Tail");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail","§7§o--Pineapple repeater, type 'pineapple' and it will read whatever you walk");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_1","§eThis wolf is called Amaruq Illaujaq, is a white wolf that keeps saying 'baa baa'.");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_2","§eThis wolf's friends, who know him personally, all also call him 'Baa Baa Wolf.'");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_3","§e1.7.10 Blockheads, enthusiastic about agriculture-related mods.");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_4","§eIts hobbies include mutton, coffee, and keeping records as 'Third Wolf'.");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_5","§eEspecially fond of pineapples, also calls them golden wolf fruit.");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_6","§eThis wolf can't read a single word, yet calls everything in the world a painting.");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_7","§eNotes are kept somewhat forcibly, obviously intending to make the sentences and paragraphs neat.");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_8","§ePineapple repeater, type 'pineapple' and it will read whatever you walk.");
+        add("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_9","§eAvoid reaching out to touch it; hope you can cherish the preciousness of life.");
 
         add(ModBlocks.MOLTEN_GOLD_COOKING_POT.get(), "Molten Gold Cooking Pot");
         add("tooltip.pasterdelight.molten_gold_cooking_pot.1", "§7▪ §9A cooking pot that doesn’t need a heat source and speeds up the cooking of all meals and drinks.");

@@ -6,6 +6,7 @@ import com.pasterdream.pasterdreammod.helper.drinkandfoodproperties.PasterDreamD
 import com.pasterdream.pasterdreammod.world.item.ModToolTiers;
 import com.pasterdream.pasterdreammod.world.item.drinkandfooditem.PasterDreamDrinkItem;
 import com.pasterdream.pasterdreammod.world.item.drinkandfooditem.PasterDreamFoodItem;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -116,6 +117,34 @@ public class ModItems {
         }
     });
 
+    // 凤梨类
+    public static final RegistryObject<Item> PINEAPPLE = ITEMS.register("pineapple", () -> new PasterDreamFoodItem(new PasterDreamDrinkAndFoodProperties().food(new FoodProperties.Builder()
+                    .nutrition(3).saturationMod(0.5f).build())));
+    // 凤梨吸芽（凤梨作物的“种子”）
+    public static final RegistryObject<Item> PINEAPPLE_SUCKER = ITEMS.register("pineapple_sucker",
+            () -> new BlockItem(ModBlocks.PINEAPPLE_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PINEAPPLE_WITH_WOLF_TAIL = ITEMS.register("pineapple_with_wolf_tail", () -> new PasterDreamFoodItem(new PasterDreamDrinkAndFoodProperties().food(new FoodProperties.Builder()
+            .nutrition(8).saturationMod(0.5f).build()).rarity(Rarity.RARE)){
+        @Override
+        public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flag) {
+            super.appendHoverText(stack, level, tooltip, flag);
+            if (Screen.hasShiftDown()) {
+                tooltip.add(Component.translatable("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_1"));
+                tooltip.add(Component.translatable("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_2"));
+                tooltip.add(Component.translatable("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_3"));
+                tooltip.add(Component.translatable("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_4"));
+                tooltip.add(Component.translatable("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_5"));
+                tooltip.add(Component.translatable("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_6"));
+                tooltip.add(Component.translatable("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_7"));
+                tooltip.add(Component.translatable("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_8"));
+                tooltip.add(Component.translatable("tooltip.pasterdelight.pineapple_with_wolf_tail.easter_egg_9"));
+            }
+            else {
+                tooltip.add(Component.translatable("tooltip.pasterdelight.pineapple_with_wolf_tail"));
+            }
+        }
+    });
+
     // 注册派 easy as a pie
     public static final RegistryObject<Item> DYEDREAM_FRUIT_PIE = ITEMS.register("dyedream_fruit_pie",
             () -> new BlockItem(ModBlocks.DYEDREAM_FRUIT_PIE.get(), new Item.Properties()));
@@ -196,6 +225,8 @@ public class ModItems {
     });
 
     // 橱柜
+
+    // 存储类方块（箱装染梦果，无花果，眠椰，凤梨）
 
 
     public static void register(IEventBus eventBus) {

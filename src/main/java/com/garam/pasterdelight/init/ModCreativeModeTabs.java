@@ -14,11 +14,14 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, PasterDelight.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> PASTERDREAM_FOOD_TAB = CREATIVE_MODE_TABS.register("pasterdream_food_tab",
+    public static final RegistryObject<CreativeModeTab> PASTERDELIGHT_TAB = CREATIVE_MODE_TABS.register("pasterdream_food_tab",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.pasterdelight.creative_mode_tab"))
                     .icon(() -> new ItemStack(ModBlocks.MOLTEN_GOLD_COOKING_POT.get()))
                     .displayItems((parameters, output) -> {
+                        output.accept(ModItems.PINEAPPLE.get());
+                        output.accept(ModItems.PINEAPPLE_WITH_WOLF_TAIL.get());
+                        output.accept(ModItems.PINEAPPLE_SUCKER.get());
                         output.accept(ModItems.GLASS_CUP_OF_BARLEY_TEA.get());
                         output.accept(ModItems.GLASS_CUP_OF_FIG_JUICE.get());
                         output.accept(ModItems.SHROOMCLAW_ENERGY.get());

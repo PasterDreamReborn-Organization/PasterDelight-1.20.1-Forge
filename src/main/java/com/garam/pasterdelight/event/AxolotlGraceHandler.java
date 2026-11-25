@@ -25,19 +25,14 @@ public class AxolotlGraceHandler
         {
             return;
         }
-        MobEffectInstance grace = entity.getEffect(ModEffects.AXOLOTL_GRACE.get());
-        if (grace == null)
-        {
-            return;
-        }
 
         AttributeInstance speed = entity.getAttribute(Attributes.MOVEMENT_SPEED);
         if (speed == null)
         {
             return;
         }
-
-        boolean shouldBoost = entity.level().isRaining();
+        MobEffectInstance grace = entity.getEffect(ModEffects.AXOLOTL_GRACE.get());
+        boolean shouldBoost = grace != null && entity.level().isRaining();
         AttributeModifier existing = speed.getModifier(RAIN_SPEED_MODIFIER_UUID);
 
         if (shouldBoost)

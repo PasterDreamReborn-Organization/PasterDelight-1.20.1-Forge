@@ -60,7 +60,9 @@ public class PasterDelight
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        event.enqueueWork(ModFluidContainerRelation::ResisterModFluidContainerRelation);
+        event.enqueueWork(() -> {
+            ModFluidContainerRelation.ResisterModFluidContainerRelation();
+        });
     }
 
     private void clientSetup(final FMLClientSetupEvent event)
