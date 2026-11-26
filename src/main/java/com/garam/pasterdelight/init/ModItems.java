@@ -23,6 +23,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.Nullable;
 import vectorwing.farmersdelight.common.item.CookingPotItem;
+import vectorwing.farmersdelight.common.item.FuelBlockItem;
 import vectorwing.farmersdelight.common.item.KnifeItem;
 import vectorwing.farmersdelight.common.item.SkilletItem;
 
@@ -225,6 +226,10 @@ public class ModItems {
     });
 
     // 橱柜
+    public static final RegistryObject<Item> DYEDREAM_CABINET = ITEMS.register("dyedream_cabinet", () -> new FuelBlockItem(ModBlocks.DYEDREAM_CABINET.get(), new Item.Properties(), 300));
+    public static final RegistryObject<Item> SLUMBER_PALM_CABINET = ITEMS.register("slumber_palm_cabinet", () -> new FuelBlockItem(ModBlocks.SLUMBER_PALM_CABINET.get(), new Item.Properties(), 300));
+    public static final RegistryObject<Item> SHADOW_CABINET = ITEMS.register("shadow_cabinet", () -> new FuelBlockItem(ModBlocks.SHADOW_CABINET.get(), new Item.Properties(), 300));
+    public static final RegistryObject<Item> WIND_MOOR_CABINET = ITEMS.register("wind_moor_cabinet", () -> new FuelBlockItem(ModBlocks.WIND_MOOR_CABINET.get(), new Item.Properties(), 300));
 
     // 存储类方块（箱装染梦果，无花果，眠椰，凤梨）
 

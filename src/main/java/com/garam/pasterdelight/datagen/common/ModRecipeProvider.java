@@ -315,5 +315,43 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(com.pasterdream.pasterdreammod.init.ModItems.BLUE_DEW.get(),2)
                 .unlockedBy(getHasName(Items.AXOLOTL_BUCKET), has(Items.AXOLOTL_BUCKET)),
                 consumer, "martini_glass_of_axolotl_special_drink");
+
+        //橱柜
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.DYEDREAM_CABINET.get())
+                .pattern("aaa")
+                .pattern("b b")
+                .pattern("aaa")
+                .define('a', com.pasterdream.pasterdreammod.init.ModItems.DYEDREAM_SLAB.get())
+                .define('b', com.pasterdream.pasterdreammod.init.ModItems.DYEDREAM_TRAPDOOR.get())
+                .unlockedBy(getHasName(com.pasterdream.pasterdreammod.init.ModItems.DYEDREAM_SLAB.get()), has(com.pasterdream.pasterdreammod.init.ModItems.DYEDREAM_TRAPDOOR.get()))
+                .save(consumer);
+
+        //PDR还没有眠椰木台阶和眠椰木活板门
+        //ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.SLUMBER_PALM_CABINET.get())
+        //        .pattern("aaa")
+        //        .pattern("b b")
+        //        .pattern("aaa")
+        //        .define('a', com.pasterdream.pasterdreammod.init.ModItems.SLUMBER_PALM_SLAB.get())
+        //        .define('b', com.pasterdream.pasterdreammod.init.ModItems.SLUMBER_PALM_TRAPDOOR.get())
+        //        .unlockedBy(getHasName(com.pasterdream.pasterdreammod.init.ModItems.SLUMBER_PALM_SLAB.get()), has(com.pasterdream.pasterdreammod.init.ModItems.SLUMBER_PALM_TRAPDOOR.get()))
+        //        .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.SHADOW_CABINET.get())
+                .pattern("aaa")
+                .pattern("b b")
+                .pattern("aaa")
+                .define('a', com.pasterdream.pasterdreammod.init.ModItems.SHADOW_SLAB.get())
+                .define('b', com.pasterdream.pasterdreammod.init.ModItems.SHADOW_TRAPDOOR.get())
+                .unlockedBy(getHasName(com.pasterdream.pasterdreammod.init.ModItems.SHADOW_SLAB.get()), has(com.pasterdream.pasterdreammod.init.ModItems.SHADOW_TRAPDOOR.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.WIND_MOOR_CABINET.get())
+                .pattern("aaa")
+                .pattern("b b")
+                .pattern("aaa")
+                .define('a', com.pasterdream.pasterdreammod.init.ModItems.WIND_MOOR_SLAB.get())
+                .define('b', com.pasterdream.pasterdreammod.init.ModItems.WIND_MOOR_TRAPDOOR.get())
+                .unlockedBy(getHasName(com.pasterdream.pasterdreammod.init.ModItems.WIND_MOOR_SLAB.get()), has(com.pasterdream.pasterdreammod.init.ModItems.WIND_MOOR_TRAPDOOR.get()))
+                .save(consumer);
     }
 }

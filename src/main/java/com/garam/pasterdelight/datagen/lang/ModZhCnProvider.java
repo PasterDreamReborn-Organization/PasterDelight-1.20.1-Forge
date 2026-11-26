@@ -103,6 +103,11 @@ public class ModZhCnProvider extends LanguageProvider {
 
         add(ModBlocks.DYEDREAM_ALLOY_SKILLET.get(), "染梦合金煎锅");
 
+        add(ModBlocks.DYEDREAM_CABINET.get(), "染梦木橱柜");
+        add(ModBlocks.SLUMBER_PALM_CABINET.get(), "眠椰木橱柜");
+        add(ModBlocks.SHADOW_CABINET.get(), "阴影木橱柜");
+        add(ModBlocks.WIND_MOOR_CABINET.get(), "风泊木橱柜");
+
         //创造模式物品栏
         add("itemGroup.pasterdelight.creative_mode_tab","帕斯特乐事");
     }

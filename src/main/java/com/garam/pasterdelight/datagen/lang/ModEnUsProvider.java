@@ -101,6 +101,11 @@ public class ModEnUsProvider extends LanguageProvider {
 
         add(ModBlocks.DYEDREAM_ALLOY_SKILLET.get(), "Dyedream Alloy Skillet");
 
+        add(ModBlocks.DYEDREAM_CABINET.get(), "Dyedream Cabinet");
+        add(ModBlocks.SLUMBER_PALM_CABINET.get(), "Slumber Palm Cabinet");
+        add(ModBlocks.SHADOW_CABINET.get(), "Shadow Cabinet");
+        add(ModBlocks.WIND_MOOR_CABINET.get(), "Wind Moor Cabinet");
+
         add("itemGroup.pasterdelight.creative_mode_tab","PasterDelight");
 
     }

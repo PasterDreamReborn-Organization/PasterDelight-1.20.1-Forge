@@ -13,6 +13,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import vectorwing.farmersdelight.common.block.CabinetBlock;
 
 public class ModBlocks
 {
@@ -36,6 +37,11 @@ public class ModBlocks
 
     // 存储类方块（箱装染梦果，无花果，眠椰，凤梨）
 
+    //橱柜
+    public static final RegistryObject<Block> DYEDREAM_CABINET = BLOCKS.register("dyedream_cabinet", () -> new CabinetBlock(BlockBehaviour.Properties.copy(Blocks.BARREL)));
+    public static final RegistryObject<Block> SLUMBER_PALM_CABINET = BLOCKS.register("slumber_palm_cabinet", () -> new CabinetBlock(BlockBehaviour.Properties.copy(Blocks.BARREL)));
+    public static final RegistryObject<Block> SHADOW_CABINET = BLOCKS.register("shadow_cabinet", () -> new CabinetBlock(BlockBehaviour.Properties.copy(Blocks.BARREL)));
+    public static final RegistryObject<Block> WIND_MOOR_CABINET = BLOCKS.register("wind_moor_cabinet", () -> new CabinetBlock(BlockBehaviour.Properties.copy(Blocks.BARREL)));
 
     public static void register(IEventBus eventBus)
     {
