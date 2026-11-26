@@ -44,6 +44,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FLUFFY_WIND_ALLOY_KNIFE.get());
                         output.accept(ModItems.SHADOW_EROSION_KNIFE.get());
                         output.accept(ModItems.SHADOW_ALLOY_KNIFE.get());
+
+                        output.accept(ModBlocks.DYEDREAM_CABINET.get());
+                        output.accept(ModBlocks.SLUMBER_PALM_CABINET.get());
+                        output.accept(ModBlocks.SHADOW_CABINET.get());
+                        output.accept(ModBlocks.WIND_MOOR_CABINET.get());
                     })
                     .build());
 

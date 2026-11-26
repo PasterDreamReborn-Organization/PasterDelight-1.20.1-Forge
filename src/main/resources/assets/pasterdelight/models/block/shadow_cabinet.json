@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "pasterdelight:block/shadow_cabinet_front",
+    "side": "pasterdelight:block/shadow_cabinet_side",
+    "top": "pasterdelight:block/shadow_cabinet_side"
+  }
+}

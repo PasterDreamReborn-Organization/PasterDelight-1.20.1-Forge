@@ -111,5 +111,17 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
         tag(ModItemTags.GIVE_COOK_BUFF)
                 .addOptionalTag(ResourceLocation.fromNamespaceAndPath("farmersdelight", "snacks"));
+
+        tag(TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("farmersdelight", "cabinets")))
+                .add(ModItems.DYEDREAM_CABINET.get())
+                .add(ModItems.SLUMBER_PALM_CABINET.get())
+                .add(ModItems.SHADOW_CABINET.get())
+                .add(ModItems.WIND_MOOR_CABINET.get());
+
+        tag(TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("farmersdelight", "cabinets/wooden")))
+                .add(ModItems.DYEDREAM_CABINET.get())
+                .add(ModItems.SLUMBER_PALM_CABINET.get())
+                .add(ModItems.SHADOW_CABINET.get())
+                .add(ModItems.WIND_MOOR_CABINET.get());
     }
 }

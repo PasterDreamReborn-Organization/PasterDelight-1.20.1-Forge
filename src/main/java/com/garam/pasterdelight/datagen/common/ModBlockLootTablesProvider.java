@@ -59,6 +59,11 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider
                         .add(LootItem.lootTableItem(ModItems.PINEAPPLE_SUCKER.get())
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F)))
                                 .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 3)))));
+
+        dropSelf(ModBlocks.DYEDREAM_CABINET.get());
+        dropSelf(ModBlocks.SLUMBER_PALM_CABINET.get());
+        dropSelf(ModBlocks.SHADOW_CABINET.get());
+        dropSelf(ModBlocks.WIND_MOOR_CABINET.get());
     }
 
     @Override
